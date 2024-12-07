@@ -1,16 +1,15 @@
-**With the chart provided as reference to how the whole system works. I will also explain how to setup a proxy on Oracle Cloud (Panel Setup Not Included), connect them to your home servers, and hide your IP when using web maps or others of some sort.**
+**With the chart provided as reference to how the whole system works, I will also explain how to setup a proxy on Oracle Cloud (Panel Setup Not Included), connect them to your home servers, and hide your IP when hosting web maps or others of the sort.**
 
 <img src="./assets/visualizedsetup.png" height="525" alt="Map of where connections go">
 
 **PREREQUISITES**
 - A VPS/Server Host to host your Velocity server on.
-- 
 - Ports that the servers at your home are using are open.
 - Your Domain on cloudflare (If you plan to use a web map or other of some sort)
 
 
 **THIS IS ASSUMING YOU HAVE ALL OF YOUR HOME SERVERS READY**
-# Part 1 - Setting up a Proxy **(Using Velocity for this section)**
+# Part 1 - Setting up a Proxy **(Using Velocity)**
 As usual, you should setup your proxy in a normal based on the panel you use or without.
 
 After you have set up and turned on your proxy, you can shut it back down and go to ``velocity.toml`` and look for this:
@@ -74,7 +73,7 @@ When you need to give the website to the web map to your players, **Make SURE** 
 
 ### Oracle Cloud: 
 https://www.oracle.com/cloud/  (You will be charged $1-10 to verify yourself but it will be refunded shortly)
-It is recommended that you upgrade to ``Pay as you go account``, you will be given a temporary charge of $100 which is refunded shortly. For location choose a US location or Frankfurt, Germany for Europe as they are the only places I know with free A1 instances. Upgrading to ``Pay as you go`` lets you access the free resources that that were shown as not available to ``always free`` accounts. You will not be charged for this unless you go over these limits for the A1 instance:
+It is recommended that you upgrade to ``Pay as you go account``, you will be given a temporary charge of $100 which is refunded shortly. For location choose a US location or Frankfurt, Germany for Europe as they are the only places I know of with free A1 instances. Upgrading to ``Pay as you go`` lets you access the free resources that that were shown as not available to ``always free`` accounts. You will not be charged for this unless you go over these limits for the A1 instance:
 - 4 cores
 - 24GB ram
 - 200GB storage
@@ -99,4 +98,3 @@ Eggs for Minecraft server brands that you can add to Pterodactyl: https://github
 > From ``Skullians [buape.com]`` (aka ``skullians`` on Admincraft discord) : 
 > 
 > I would mention that if you are running servers in docker or using a panel that uses docker such as pterodactyl, you should use the internal 172.18.0.1 IP https://pterodactyl.io/community/games/minecraft.html
-
