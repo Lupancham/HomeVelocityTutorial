@@ -1,6 +1,6 @@
 **With the chart provided as reference to how the whole system works. I will also explain how to setup a proxy on Oracle Cloud (Panel Setup Not Included), connect them to your home servers, and hide your IP when using web maps or others of some sort.**
-<img src="./assets/visualizedsetup.png" height="450px">
 
+<img src="./assets/visualizedsetup.png" height="525" alt="Map of where connections go">
 
 **PREREQUISITES**
 - A VPS/Server Host to host your Velocity server on.
@@ -49,12 +49,12 @@ Restart/boot up all connected servers including the Proxy.
 **(ONLY NEEDING A RECORDS WILL ONLY WORK IF YOUR VELOCITY SERVER PORT IS 25565)**
 Go to your DNS records and create a new DNS record. You are going to point the root or a subdomain to your Proxy server IP with **PROXY STATUS OFF**
 
-<img src="./assets/mcserverArecord.png" height="300px">
+<img src="./assets/mcserverArecord.png" height="428" alt="Setting the A record for your velocity server">
 
 **IF YOUR VELOCITY SERVER ISN'T ON PORT 25565**
 Create a ``srv record`` and have it point to your ``A record`` with the name being ``_minecraft`` with the ``priority as 0``, the ``weight as 0`` and the ``port set to your proxy port``.
 
-<img src="./assets/mcserverSRVrecord.png" height="300px">
+<img src="./assets/mcserverSRVrecord.png" height="444" alt="Setting the SRV record for your velocity server">
 
 # Part 3 - Completion for having a proxy, webmap now?
 Congrats, you know have a proxy that allows players to connect yo your home servers without needing to give away your IP! However, if you wish to have things like webmaps, we are not done yet.
@@ -68,7 +68,7 @@ When you create your A record you will need to turn on the **Proxy Status** whic
 
 When you need to give the website to the web map to your players, **Make SURE** to give the website link like this ``https://map.exampledomain.net:[THE PORT TO THE WEBMAP]`` giving the link as is will not connect them to the web map! Unless your web map is hosted on port ``80 (HTTP)`` or ``443 (HTTPS)``  and you know how to get either HTTP or HTTPS on your web map.
 
-<img src="./assets/webmap.png" height="300px">
+<img src="./assets/webmap.png" height="436" alt="Pointing domain to your IP with Proxy status on using A record">
 
 # Resources
 
@@ -83,9 +83,9 @@ It is recommended that you upgrade to ``Pay as you go account``, you will be giv
 
 <details>
 <summary>Click to see OCI Instance Creation</summary>
-<img src="./assets/oci1.png" height="500px">
-<img src="./assets/oci2.png" height="500px">
-<img src="./assets/oci3.png" height="500px">
+<img src="./assets/oci1.png" height="859" alt="Selecting Shape">
+<img src="./assets/oci2.png" height="520" alt="Getting SSH keys">
+<img src="./assets/oci3.png" height="540" alt="Selecting Boot Volume Size">
 </details>
 
 Cloudflare: https://cloudflare.com/
