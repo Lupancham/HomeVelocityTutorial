@@ -100,3 +100,5 @@ Eggs for Minecraft server brands that you can add to Pterodactyl: https://github
 > 
 > I would mention that if you are running servers in docker or using a panel that uses docker such as pterodactyl, you should use the internal 172.18.0.1 IP https://pterodactyl.io/community/games/minecraft.html
 
+### Stars! (On GitHub)
+[![Star History Chart](https://api.star-history.com/svg?repos=Lupancham/HomeVelocityTutorial&type=Date)](https://www.star-history.com/#Lupancham/HomeVelocityTutorial&Date)
